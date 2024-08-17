@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="contact-card">
+            <p class="name">Lorenzo Miñón</p>
+            <div class="contact-info">
+                <p><img src="/images/icons8-email-50.png" alt="Email Icon"> lorenzominon01@gmail.com</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#home"><img src="home-icon.png" alt="Home Icon" class="home-icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://media.licdn.com/dms/image/D4D03AQGKyYSU7uMvaA/profile-displayphoto-shrink_800_800/0/1676760558852?e=1729123200&v=beta&t=SHSS4nVMehlzVly_wtj2DwL4B4BXaiH79OR_6gjjgMA" alt="Profile Picture" class="about-img">
+            <div>
+                <h3>Hi, I'm Lorenzo Miñón</h3>
+                <p>Software engineer, skillful at many technologies. Very resilient and ready to learn new things!.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <img src="/images/python.png" alt="Python" class="skill-icon">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="/images/brain.png" alt="Machine Learning" class="skill-icon">
+                <p>Machine Learning</p>
+            </div>
+            <div class="skill">
+                <img src="/images/deep-learning.png" alt="Deep Learning" class="skill-icon">
+                <p>Deep Learning</p>
+            </div>
+            <div class="skill">
+                <img src="/images/net.png" alt=".NET" class="skill-icon">
+                <p>.NET</p>
+            </div>
+            <div class="skill">
+                <img src="/images/sql.png" alt="SQL" class="skill-icon">
+                <p>SQL</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-list">
+            <div class="project">
+                <h3>Software de compra y venta .NET</h3>
+                <p>Gestión de compra y venta con reposición de stock, utilizando .NET C# y SQL Server.</p>
+                <img src="https://img.icons8.com/?size=100&id=4NUeu__UwtXf&format=png&color=000000" alt="Project 1">
+            </div>
+            <div class="project">
+                <h3>Shopping Cart</h3>
+                <p>Shopping cart usando TypeScript y React.</p>
+                <img src="https://img.icons8.com/?size=100&id=23169&format=png&color=000000" alt="Project 2">
+            </div>
+            <div class="project">
+                <h3>Proyecto de Machine Learning</h3>
+                <p>Cálculos y aprendizaje automático utilizando Python, NumPy y SciPy.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:1000/1*9C2BMWR8Lld-iPHlqi7Peg.jpeg" alt="Project 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="recommendations-list">
+            <div class="recommendation">
+                <p>Lorenzo is a very quick learner and quickly grasps key concepts of web development...</p>
+            </div>
+            <div class="recommendation">
+                <p>Working with lorenzo has been an absolute pleasure. She is highly skilled in React...</p>
+            </div>
+            <div class="recommendation">
+                <p>I had worked closely with lorenzo
+                     during the final phase of our project, where her deep understanding...</p>
+            </div>
+        </div>
+        
+        <form class="recommendation-form">
+            <h3>Leave a Recommendation</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div class="add-recommendation-btn">
+            <img src="add-icon.png" alt="Add Recommendation">
+        </div>
+    </section>
+    
+
+    <div id="confirmation-popup" style="display: none;">
+        <p>Thank you for submitting a recommendation!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Portafolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

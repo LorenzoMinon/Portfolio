@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    position: relative;
+}
+
+.contact-card {
+    background-color: #333; /* Fondo oscuro para contrastar */
+    padding: 5px 5px;
+    border-radius: 8px;
+    color: white;
+    width: 250px; /* Ajusta según el tamaño que desees */
+    text-align: left;
+}
+
+.name {
+    font-size: 1.2rem; /* Tamaño de letra ajustado para el nombre */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 0.9rem; /* Tamaño de letra más pequeño para el contacto */
+}
+
+.contact-info img {
+    width: 15px; /* Tamaño más pequeño para el ícono */
+    height: 15px;
+    margin-right: 8px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.home-icon {
+    width: 30px;
+    height: 30px;
+}
+
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.about-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1 1 20%;
+    text-align: center;
+    margin: 10px;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+}
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Añade espacio entre cada proyecto */
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: título, descripción, imagen */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    background-color: #f9f9f9; /* Fondo suave para resaltar los proyectos */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto elevado */
+    transition: transform 0.3s ease; /* Animación para un efecto al pasar el ratón */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Elevar un poco al pasar el ratón */
+}
+
+.project h3 {
+    margin: 5px;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+.project p {
+    margin: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: left; /* Alinea la descripción a la izquierda */
+}
+
+.project img {
+    width: 100px; /* Tamaño uniforme para todas las imágenes */
+    height: 100px; /* Tamaño uniforme para todas las imágenes */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para un toque moderno */
+    justify-self: end; /* Alinea la imagen a la derecha de la celda */
+}
+
+
+
+/* Estilos para la sección de recomendaciones */
+#recommendations {
+    padding: 20px;
+}
+
+#recommendations h2 {
+    color: #6A0DAD; /* Color morado para el título */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.recommendations-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.recommendation {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: left;
+}
+
+.recommendation p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Estilos para el formulario de recomendación */
+.recommendation-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recommendation-form h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.recommendation-form label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.recommendation-form input,
+.recommendation-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.recommendation-form textarea {
+    height: 100px;
+}
+
+.recommendation-form button {
+    padding: 10px 20px;
+    background-color: #6A0DAD; /* Color del botón morado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.recommendation-form button:hover {
+    background-color: #580B9E; /* Oscurece el botón al pasar el ratón */
+}
+
+/* Botón flotante para agregar una recomendación */
+.add-recommendation-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6A0DAD;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add-recommendation-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilo del pop-up de confirmación */
+.confirmation-popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6A0DAD;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
